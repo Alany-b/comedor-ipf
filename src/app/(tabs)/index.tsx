@@ -23,7 +23,9 @@ export default function InicioScreen() {
           </Pressable>
         </Link>
         <Link href="/cocina" asChild>
-          <Pressable style={[styles.card, styles.cardCocina]}>
+          <Pressable
+            style={StyleSheet.flatten([styles.card, styles.cardCocina])}
+          >
             <Text style={styles.cardText}>Acceso Personal Cocina</Text>
           </Pressable>
         </Link>

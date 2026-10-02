@@ -46,10 +46,10 @@ export default function CarritoScreen() {
           {/* Envolvemos en asChild porque es un componente interactivo directo */}
           <Link href="/carrito/nota" asChild>
             <Pressable
-              style={[
+              style={StyleSheet.flatten([
                 styles.botonContinuar,
                 carrito.length === 0 && styles.deshabilitado,
-              ]}
+              ])}
               disabled={carrito.length === 0}
             >
               <Text style={styles.botonTexto}>Continuar</Text>
